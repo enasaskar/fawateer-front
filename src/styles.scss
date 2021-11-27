@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "segoeui-light";
+  src: local("sans-serif"), url(./assets/fonts/segoeui-light.woff);
+}
+
+@font-face {
+  font-family: "segoeui";
+  src: local("sans-serif"), url(./assets/fonts/segoeui.woff);
+}
+
+@font-face {
+  font-family: "segoeui-semibold";
+  src: local("sans-serif"), url(./assets/fonts/segui-semibold.woff);
+}
+
+@font-face {
+  font-family: "segoeui-bold";
+  src: local("sans-serif"), url(./assets/fonts/segoeui-bold.woff);
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: local("sans-serif"), url(./assets/fonts/roboto-bold.ttf);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "segoeui-light", "segoeui", "segoeui-semibold", "roboto-bold", "segoeui-bold", sans-serif;
+
+  p {
+    font: 20px/27px "segoeui";
+    letter-spacing: 0px;
+  }
+}

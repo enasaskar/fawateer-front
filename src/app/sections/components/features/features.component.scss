@@ -1,0 +1,35 @@
+@use "../../../../variables" as vars;
+
+.features-container {
+  width: 100%;
+  padding-top: 39px;
+
+  .features-bg {
+    position: relative;
+    width: 100%;
+    .img {
+      position: absolute;
+      left: -32%;
+      width: 77%;
+      height: 1230px;
+      background: transparent url("../../../../assets/images/feature-bg.png") 0% 0% no-repeat padding-box;
+    }
+  }
+
+  .content {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    h4 {
+      text-align: left;
+      font: 47px/63px "segoeui-bold";
+      letter-spacing: 0px;
+      color: vars.$text-iron;
+      opacity: 1;
+
+      padding-left: 10.8%;
+      padding-top: 162px;
+      height: 139px;
+    }
+  }
+}

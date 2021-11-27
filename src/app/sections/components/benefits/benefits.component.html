@@ -1,0 +1,13 @@
+<div class="benefits-container">
+  <h1>Fawateer Benefits</h1>
+
+  <div class="content">
+    <div class="benefit-item" *ngFor="let benefit of benefits;">
+      <div class="img">
+        <img [src]="benefit.icon" alt="">
+      </div>
+      <p>{{benefit.description}}</p>
+    </div>
+  </div>
+  <app-contact-us></app-contact-us>
+</div>

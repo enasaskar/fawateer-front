@@ -1,0 +1,43 @@
+@use "../../../../variables" as vars;
+
+.about-container {
+  padding-top: 27px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    h1 {
+      margin: 0;
+      color: vars.$text-jungle-green;
+      font: 79px/105px "segoeui-bold";
+      letter-spacing: 0px;
+    }
+
+    .divider {
+      width: 11.25%;
+      border-bottom: 3px solid vars.$text-jungle-green;
+      margin: 35px 0 55px 0;
+    }
+
+    p {
+      width: 45%;
+      text-align: center;
+    }
+  }
+
+  .items {
+    margin-top: 78px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: vars.$bg-black-haze;
+    opacity: 0.73;
+
+    padding: 69px 17% 39px 17%;
+  }
+}

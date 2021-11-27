@@ -1,0 +1,22 @@
+<mat-toolbar *ngIf="(isXSmall| async) ">
+  <!-- (click)="drawer.toggle()" -->
+  <button type="button" aria-label="Toggle sidenav" mat-icon-button>
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <a class="nav-logo" routerLink="/"><img src="assets/images/green-logo.png"></a>
+</mat-toolbar>
+
+<div *ngIf="(isXSmall| async) === false">
+  <div class="main-navbar">
+    <a class="nav-logo" routerLink="/"><img src="assets/images/green-logo.png"></a>
+    <div class="nav-items">
+      <a class="nav-item" routerLink="/" routerLinkActive="active">Home</a>
+      <a class="nav-item" routerLink="/" routerLinkActive="active">What is Fawateer?</a>
+      <a class="nav-item" routerLink="/" routerLinkActive="active">Features</a>
+      <a class="nav-item" routerLink="/" routerLinkActive="active">Benefits</a>
+      <a class="nav-item" routerLink="/" routerLinkActive="active">Contacts Us</a>
+    </div>
+
+  </div>
+</div>

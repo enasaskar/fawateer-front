@@ -1,0 +1,53 @@
+@use "../../../variables" as vars;
+
+.main-navbar {
+  display: flex;
+  align-items: center;
+  padding: 2% 4.3% 1.5% 10.5%;
+
+  .nav-logo img {
+    height: 66px;
+  }
+
+  .nav-items {
+    font-family: "segoeui-semibold";
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 33.5%;
+
+    .nav-item {
+      font-size: 23px;
+      letter-spacing: 0;
+      margin-right: 3.4%;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        margin-top: 1.5px;
+        height: 3px;
+        background: vars.$text-jungle-green;
+        transition: width 0.1s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &.active {
+        font-weight: bold;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background: vars.$text-jungle-green;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "../../../../variables" as vars;
+
+.home-container {
+  background: transparent url("../../../../assets/images/home-photo.png") 0% 0% no-repeat padding-box;
+  height: 832px;
+  opacity: 1;
+
+  .content {
+    padding: 11% 0 0 10%;
+
+    h1 {
+      color: vars.$text-jungle-green;
+      width: 28.4%;
+      font: 55px/65px "segoeui-bold";
+      letter-spacing: 0px;
+    }
+
+    p {
+      width: 21.6%;
+      height: 81px;
+    }
+  }
+}

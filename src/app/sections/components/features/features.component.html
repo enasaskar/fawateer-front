@@ -1,0 +1,12 @@
+<div class="features-container">
+  <!-- *ngIf="(isXSmall| async) === false" -->
+  <div class="features-bg">
+    <div class="img"></div>
+  </div>
+  <div class="content">
+    <h4>Features</h4>
+    <div class="feature-list">
+      <app-feature-item *ngFor="let feature of features;" [item]="feature"></app-feature-item>
+    </div>
+  </div>
+</div>

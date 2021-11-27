@@ -1,0 +1,32 @@
+@use "../../../../variables" as vars;
+
+.contact-Container {
+  width: 85%;
+  margin: 7%;
+
+  h1 {
+    font: 47px/63px "segoeui-bold";
+    padding: 5% 4% 0;
+  }
+
+  .divider {
+    width: 9.25%;
+    border-bottom: 5px solid vars.$text-jungle-green;
+    margin: 0 4% 0;
+  }
+
+  .contact-form {
+    padding-top: 2.6%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .form-item {
+      width: 40%;
+      margin-bottom: 5%;
+      &:last-child {
+        width: 90%;
+      }
+    }
+  }
+}

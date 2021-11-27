@@ -1,0 +1,26 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+
+  .img {
+    width: 76px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    padding-left: 3%;
+    padding-bottom: 30px;
+
+    h5 {
+      text-align: left;
+      font: 29px/38px "segoeui-bold";
+      letter-spacing: 0px;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}
