@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+// import { map } from 'rxjs/operators';
+// import { Observable } from 'rxjs';
 
 
 @Component({
@@ -11,17 +11,16 @@ import { Observable } from 'rxjs';
 })
 export class NavbarComponent implements OnInit {
 
-  isXSmall: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.XSmall)
-    .pipe(
-      map(result => result.matches)
-    );
+  // isXSmall: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.XSmall)
+  //   .pipe(
+  //     map(result => result.matches)
+  //   );
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor() {
   }
 
 
   ngOnInit(): void {
-    console.log(this.isXSmall)
   }
 
 

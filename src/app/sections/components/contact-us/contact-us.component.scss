@@ -2,7 +2,10 @@
 
 .contact-Container {
   width: 85%;
-  margin: 7%;
+  margin: 12% 7%;
+  @media (min-width: 1400px) {
+    margin: 7%;
+  }
 
   h1 {
     font: 47px/63px "segoeui-bold";

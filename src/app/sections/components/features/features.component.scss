@@ -9,10 +9,18 @@
     width: 100%;
     .img {
       position: absolute;
-      left: -32%;
-      width: 77%;
+      left: -92%;
+      width: 145%;
       height: 1230px;
       background: transparent url("../../../../assets/images/feature-bg.png") 0% 0% no-repeat padding-box;
+      @media (min-width: 1200px) {
+        left: -73%;
+        width: 122%;
+      }
+      @media (min-width: 1400px) {
+        left: -32%;
+        width: 77%;
+      }
     }
   }
 

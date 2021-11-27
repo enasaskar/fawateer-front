@@ -1,0 +1,36 @@
+@use "../../../variables" as vars;
+
+.footer-container {
+  margin-top: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: vars.$bg-black !important;
+  height: 421px;
+
+  .content {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+
+    .group-1,
+    .group-2,
+    .group-3 {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      font: 16px/45px "segoeui";
+      color: vars.$text-white;
+    }
+    .group-3 {
+      a {
+        opacity: 0.45;
+      }
+      p {
+        font: 28px/37px "segoeui";
+        color: vars.$text-white;
+      }
+    }
+  }
+}

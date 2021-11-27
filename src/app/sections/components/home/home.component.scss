@@ -10,14 +10,26 @@
 
     h1 {
       color: vars.$text-jungle-green;
-      width: 28.4%;
+      width: 63.4%;
       font: 55px/65px "segoeui-bold";
       letter-spacing: 0px;
+      @media (min-width: 1200px) {
+        width: 43.4%;
+      }
+      @media (min-width: 1400px) {
+        width: 28.4%;
+      }
     }
 
     p {
-      width: 21.6%;
+      width: 44.6%;
       height: 81px;
+      @media (min-width: 1200px) {
+        width: 33.6%;
+      }
+      @media (min-width: 1400px) {
+        width: 21.6%;
+      }
     }
   }
 }

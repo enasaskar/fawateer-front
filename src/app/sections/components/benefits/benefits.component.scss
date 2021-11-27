@@ -1,7 +1,7 @@
 @use "../../../../variables" as vars;
 
 .benefits-container {
-  height: 1814px;
+  height: 1605px;
   width: 100%;
   margin-top: 150px;
 
@@ -9,6 +9,12 @@
   opacity: 0.91;
   backdrop-filter: blur(33px);
   -webkit-backdrop-filter: blur(33px);
+  @media (min-width: 1200px) {
+    height: 1665px;
+  }
+  @media (min-width: 1400px) {
+    height: 1814px;
+  }
 
   h1 {
     text-align: center;
@@ -29,7 +35,7 @@
 
     .benefit-item {
       width: 20%;
-      min-height: 200px;
+      height: 235px;
 
       display: flex;
       flex-direction: column;
