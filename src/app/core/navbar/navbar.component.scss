@@ -23,6 +23,8 @@
       margin-right: 3.4%;
       cursor: pointer;
       white-space: nowrap;
+      color: vars.$text-black;
+      text-decoration: none;
 
       &::after {
         content: "";
